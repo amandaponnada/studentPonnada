@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
 
 import entities.student;
 import entities.grade;
-
+//THIS IS 2ND COMMIT.
 public class addStudent {
 
 	public static void main(String[] args) {

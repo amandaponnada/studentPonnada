@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 
 import entities.grade;
 import entities.student;
-
+	
 public class listGrade {
 
 	public static void main(String[] args) {

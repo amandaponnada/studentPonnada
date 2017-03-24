@@ -72,6 +72,13 @@ public class student {
 	public void setStudentElective(String studentElective) {
 		this.studentElective = studentElective;
 	}
+
+	@Override
+	public String toString() {
+		return "student [studentId=" + studentId + ", studentName=" + studentName + ", studentAge=" + studentAge
+				+ ", studentGradeId=" + studentGradeId + ", studentMajorSub=" + studentMajorSub + ", studentElective="
+				+ studentElective + "]";
+	}
 	
 	
 	

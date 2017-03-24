@@ -21,7 +21,7 @@ public class listGrade {
 		em.getTransaction().begin();
 		
 		Scanner in = new Scanner(System.in);
-		System.out.print("Enter a Grade : ");
+		System.out.print("Enter a Grade ID: ");
 		int selectedGrade = in.nextInt();
 		
 		TypedQuery<grade> selectedGradeQuery = em.createQuery("select schoolGrade from grade schoolGrade where schoolGrade.gradeId = :selectedGrade",grade.class);
@@ -29,8 +29,8 @@ public class listGrade {
 		List<grade>results = selectedGradeQuery.getResultList();
 		
 		
-		for(grade a : results){
-			System.out.println("Grade Details : " + a.getgradeName());
+		for(grade a : results) {
+			System.out.println(a.toString());
 		}
 		
 		em.close();

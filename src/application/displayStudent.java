@@ -29,7 +29,7 @@ public class displayStudent {
 		
 		
 		for(student a : results){
-			System.out.println("Student Age : " + a.getStudentAge());
+			System.out.println(a.toString());
 		}
 		
 		em.close();

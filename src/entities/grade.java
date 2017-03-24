@@ -85,4 +85,12 @@ public class grade {
 		this.gradeMascot = gradeMascot;
 	}
 
+	@Override
+	public String toString() {
+		return "grade [gradeId=" + gradeId + ", gradeName=" + gradeName + ", gradeTeacherName=" + gradeTeacherName
+				+ ", gradeSubTeacherName=" + gradeSubTeacherName + ", gradeSchoolName=" + gradeSchoolName
+				+ ", gradeMascot=" + gradeMascot + "]";
+	}
+
+	
 }
